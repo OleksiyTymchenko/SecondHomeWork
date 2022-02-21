@@ -1,0 +1,123 @@
+/*
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+*/
+
+:root {
+  --max-width: 1440px;
+  --retreat1: 132px;
+  --retreat2: 24px;
+  --text_color_1: #171923;
+  --text_color_2: #1a202c;
+  --text_color_3: #718096;
+  --text_color_4: #2b6cb0;
+  --pading: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: 16px;
+  margin: 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 0 0 var(--pading);
+}
+.main-page-container {
+}
+.leadership__row {
+  margin: auto;
+}
+.header-title {
+  margin: 90px 0 88px;
+}
+
+.header-title h1 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.col,
+.leadership__member__photo,
+.leadership__information {
+  display: inline-block;
+  vertical-align: top;
+  font-size: initial;
+}
+
+.leadership__member {
+  line-height: 1.2;
+}
+
+.leadership__row,
+.leadership__member {
+}
+
+.leadership__member {
+  width: calc(50% - var(--retreat1));
+}
+
+.leadership__row .leadership__member__photo {
+  width: calc(25% - var(--retreat2));
+}
+.leadership__member__photo img {
+  height: 80px;
+  width: 80px;
+}
+
+.leadership__information {
+  width: calc(75% - var(--retreat2));
+}
+
+.leadership__row {
+  margin-bottom: 40px;
+}
+.leadership__row:last-child {
+  margin-bottom: 0px;
+}
+.leadership__information p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text_color_1);
+}
+
+.leadership__name p {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text_color_2);
+  margin-bottom: 8px;
+}
+
+.leadership__position p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text_color_3);
+  margin-bottom: 4px;
+}
+
+.leadership__member .leadership__contacts p {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text_color_4);
+  margin-bottom: 24px;
+}
+
+.leadership__characteristic p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text_color_1);
+}
+
+.leadership__contacts span img {
+  height: 18px;
+  width: 18px;
+}
